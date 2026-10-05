@@ -1,15 +1,14 @@
 {
   "manifest_version": 3,
   "name": "FLAVOX Uploader",
-  "version": "1.0.0",
-  "description": "Golden-theme TikTok video quality assistant for preparing and uploading high-quality videos.",
+  "version": "1.1.0",
+  "description": "Golden-theme TikTok video quality assistant with local FFmpeg WebAssembly compression.",
   "permissions": [
     "storage",
     "tabs"
   ],
   "host_permissions": [
-    "https://www.tiktok.com/*",
-    "https://www.tiktok.com/tiktokstudio/*"
+    "https://www.tiktok.com/*"
   ],
   "action": {
     "default_title": "FLAVOX Uploader",
@@ -30,8 +29,7 @@
   "content_scripts": [
     {
       "matches": [
-        "https://www.tiktok.com/*",
-        "https://www.tiktok.com/tiktokstudio/*"
+        "https://www.tiktok.com/*"
       ],
       "js": [
         "content.js"
@@ -45,7 +43,9 @@
   "web_accessible_resources": [
     {
       "resources": [
-        "compression.js"
+        "compression.js",
+        "ffmpeg/ffmpeg-core.js",
+        "ffmpeg/ffmpeg-core.wasm"
       ],
       "matches": [
         "https://www.tiktok.com/*"
