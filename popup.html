@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FLAVOX Uploader</title>
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+<div class="app">
+  <header>
+    <img class="logo" src="icons/icon128.png" alt="FLAVOX">
+    <div class="title-wrap">
+      <div class="brand">FLAVOX UPLOADER</div>
+      <div class="sub">HIGH QUALITY TIKTOK TOOL</div>
+    </div>
+    <button id="tiktok" class="tiktok-btn" title="Open @flavox.3dits">♪</button>
+  </header>
+
+  <section class="profile">
+    <span class="avatar"><img src="icons/icon128.png"></span>
+    <div><b>@flavox.3dits</b><small>FLAVOX 3D EDITS</small></div>
+    <button id="profileBtn">OPEN</button>
+  </section>
+
+  <div class="section-title">UPLOAD OPTIONS</div>
+
+  <label class="option">
+    <div><span class="opt-icon">HD</span><div><b>High Quality Upload</b><small>Use the high-quality upload workflow</small></div></div>
+    <input id="hq" type="checkbox" checked><i></i>
+  </label>
+
+  <label class="option">
+    <div><span class="opt-icon">WM</span><div><b>Watermark</b><small>Keep watermark preference enabled</small></div></div>
+    <input id="watermark" type="checkbox"><i></i>
+  </label>
+
+  <div class="section-title">TIKTOK STUDIO</div>
+  <button id="open" class="main">OPEN TIKTOK STUDIO <span>↗</span></button>
+  <p class="note">FLAVOX options are saved automatically. TikTok controls final server-side encoding and watermark behavior.</p>
+</div>
+<script src="popup.js"></script>
+</body>
+</html>

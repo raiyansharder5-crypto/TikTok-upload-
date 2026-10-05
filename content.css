@@ -1,0 +1,80 @@
+
+#flavox-dynamic-island{
+  position:fixed!important;
+  z-index:2147483647!important;
+  top:12px!important;
+  left:50%!important;
+  transform:translate(-50%,-150%) scale(.94)!important;
+  width:min(430px,calc(100vw - 18px))!important;
+  height:70px!important;
+  padding:8px 13px 8px 8px!important;
+  display:flex!important;
+  align-items:center!important;
+  gap:11px!important;
+  border:1px solid rgba(244,195,74,.62)!important;
+  border-radius:40px!important;
+  background:linear-gradient(110deg,rgba(13,11,8,.98),rgba(42,29,8,.97))!important;
+  box-shadow:0 10px 40px rgba(0,0,0,.58),0 0 30px rgba(240,174,40,.24),inset 0 0 20px rgba(255,210,100,.05)!important;
+  backdrop-filter:blur(20px)!important;
+  -webkit-backdrop-filter:blur(20px)!important;
+  opacity:0!important;
+  pointer-events:none!important;
+  transition:transform .5s cubic-bezier(.2,.9,.2,1),opacity .25s ease!important;
+  box-sizing:border-box!important;
+  font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important;
+}
+#flavox-dynamic-island.flavox-show{
+  transform:translate(-50%,0) scale(1)!important;
+  opacity:1!important;
+  pointer-events:auto!important;
+}
+#flavox-dynamic-island .flavox-logo-wrap{
+  width:52px!important;
+  height:52px!important;
+  min-width:52px!important;
+  border-radius:50%!important;
+  overflow:hidden!important;
+  border:1px solid rgba(255,214,103,.75)!important;
+  box-shadow:0 0 18px rgba(238,178,44,.30)!important;
+  background:#090806!important;
+}
+#flavox-dynamic-island .flavox-logo{
+  width:100%!important;
+  height:100%!important;
+  object-fit:cover!important;
+  display:block!important;
+}
+#flavox-dynamic-island .flavox-copy{
+  min-width:0!important;
+  flex:1!important;
+}
+#flavox-dynamic-island .flavox-name{
+  color:#ffd76b!important;
+  font-size:15px!important;
+  font-weight:900!important;
+  letter-spacing:1.1px!important;
+  white-space:nowrap!important;
+}
+#flavox-dynamic-island .flavox-close{
+  border:0!important;
+  background:rgba(255,255,255,.07)!important;
+  color:#c8b98f!important;
+  width:30px!important;
+  height:30px!important;
+  border-radius:50%!important;
+  cursor:pointer!important;
+  font-size:20px!important;
+  line-height:30px!important;
+  padding:0!important;
+}
+@media(max-width:500px){
+  #flavox-dynamic-island{
+    top:8px!important;
+    width:calc(100vw - 16px)!important;
+    height:64px!important;
+  }
+  #flavox-dynamic-island .flavox-logo-wrap{
+    width:48px!important;height:48px!important;min-width:48px!important;
+  }
+  #flavox-dynamic-island .flavox-name{font-size:13px!important}
+}
